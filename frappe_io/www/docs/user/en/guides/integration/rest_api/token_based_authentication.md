@@ -36,7 +36,7 @@ response = requests.request("GET", url, headers=headers)
 
 If the "Basic" authentication scheme is used, the credentials are a combination of api_key and api_secret and are constructed like this:
 
-1. The username and the password are combined with a colon (api_key:api_secret).
+1. The API Key and the API Secret are combined as one single string with a colon in between (api_key:api_secret).
   ```<api_key>:<api_secret>```
 2. The resulting string is base64 encoded.
   ```base64encode(<api_key>:<api_secret>)```
